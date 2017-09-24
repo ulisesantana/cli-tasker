@@ -1,0 +1,33 @@
+{
+  "name": "tasker",
+  "version": "0.0.1",
+  "description": "A task manager for command line.",
+  "main": "src/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "@types/node": "^8.0.30"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node build/index.js",
+    "build": "tsc",
+    "dev": "tsc && node build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ulisesantana/tasker.git"
+  },
+  "keywords": [
+    "task",
+    "cli"
+  ],
+  "author": "Ulises Santana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ulisesantana/tasker/issues"
+  },
+  "homepage": "https://github.com/ulisesantana/tasker#readme"
+}

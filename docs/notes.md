@@ -54,4 +54,7 @@ Task deleted.
 
 ## ¿Dónde se almacenan las tareas?
 
-La idea es que exista persitencia de datos en el disco y se actualize con la base de datos que podría haber en firebase. Aunque también podríamos hacer algo en mongo, por ejemplo. Incluso en MySQL.
+La idea es que exista persitencia de datos en el disco y se actualize con la base de datos que podría ser en MongoDB o MySQL. 
+
+Se creará una API REST a la que se atacará para interactuar con la base de datos y la gestión de usuarios. En la versión CLI se almacenará en disco el token del usuario.
+
