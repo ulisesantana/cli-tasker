@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@types/node": "^8.0.30",
-    "caporal": "^0.7.0"
+    "commander": "^2.11.0",
+    "google-spreadsheet": "^2.0.4",
+    "inquirer": "^3.3.0"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.43",
@@ -23,7 +25,8 @@
   "scripts": {
     "start": "node build/index.js",
     "build": "tsc",
-    "dev": "tsc --watch",
+    "dev": "tsc && node build/index.js",
+    "watch": "tsc --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

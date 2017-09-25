@@ -1,17 +1,11 @@
-import FileManager from "../../lib/fileManager/fileManager";
-import { Task } from "./task.interface";
+// import FileManager from "../../lib/fileManager/fileManager";
+import TaskGetter from "../taskGetter/taskGetter";
+import { Task } from "../../interfaces/task.interface";
 
-export default class TaskManager {
-  private fm: FileManager;
-  private tasksPath: string;
+export default class TaskManager extends TaskGetter {
 
   constructor() {
-    this.fm = new FileManager();
-    this.tasksPath = this.fm.getConfig().paths.tasksPath;
-  }
-
-  public getTasks(): Task[] {
-    return this.fm.getJSONFile(this.tasksPath);
+    super();
   }
 
   public saveTask(data: Task): void {

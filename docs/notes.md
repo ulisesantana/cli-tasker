@@ -58,3 +58,4 @@ La idea es que exista persitencia de datos en el disco y se actualize con la bas
 
 Se creará una API REST a la que se atacará para interactuar con la base de datos y la gestión de usuarios. En la versión CLI se almacenará en disco el token del usuario.
 
+Ahora mismo como estoy simplemente probando el concepto y esto no es más que un prototipo, voy a optar por usar Google Drive gracias a este [tutorial](https://www.twilio.com/blog/2017/03/google-spreadsheets-and-javascriptnode-js.html) para almacenar un archivo JSON con todas nuestras tareas.  
